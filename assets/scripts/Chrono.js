@@ -1,5 +1,6 @@
 
 // Exercise 2
+
 // Write a function that displays every second that has passed
 // on the page since it was opened. The display should be refreshed every second.
 // If 60 seconds are elapsed, write "a minute has passed", 
@@ -7,7 +8,11 @@
 
  // I changed the main goal of the exercice: it's now a casio watch.
 
-// chrono
+// watch:
+
+
+
+
 
 let intervalId = null;
 let startTime = 0;
@@ -39,6 +44,7 @@ function toggleChrono() {
   let lapSound = document.getElementById('mainSound');
 
   if (isRunning) {
+
     
     clearInterval(intervalId);
     intervalId = null;
@@ -75,15 +81,15 @@ function resetChrono() {
   lapSound.play();
 }
 
-// Fonction pour ajouter un tour
+// lap count
 function LapChrono() {
+
+  let lapSound = document.getElementById('lapSound');
   if (isRunning) {
       const currentTime = new Date().getTime() - startTime + elapsedTime;
       const lapTime = currentTime - lastLapTime;
       lapTimes.push(lapTime); 
       updateLapDisplay(); 
-
-      let lapSound = document.getElementById('lapSound');
       lapSound.play();
   }
 }
