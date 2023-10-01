@@ -12,30 +12,33 @@
 body {
 
     background-color:#3d768f;
-}
-
-
-.watch {
-
-    width: 100px;
-    height: 100px;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgb(25, 27, 49);
-    display: block;
-    justify-content: center;
-    flex-direction: column;
     
 }
 
 
+ .watch {
+
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #191b31;
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    
+    
+    
+} 
+
 
 
 #screen {
-    width: 77px;
-    height: 35px;
-    margin-left: 9px;
+    width: 240px;
+    height: 60px;
+    margin-left: 30px;
     background-color:aqua;
     border-radius: 2px;
     border-style:inset;
@@ -49,111 +52,67 @@ body {
 }
 
 #chrono {
-    padding-left: 5px;
-    font-size: 16px;
+    
+    font-size: 32px;
     font-family: "digital";
     color: rgba(58, 40, 40, 0.829);
-    position: relative;
+    position: fixed;
     display: block;
-    z-index: 1;
+    margin-left: 5px;
+    
+    
    
 }
 
 #currentTime {
-    padding-left: 17px;
-    padding-top: 30px;
-    font-size: 32px;
+    
+    font-size: 64px;
+    line-height: 32px;
     font-family: "digital";
     color: rgba(58, 40, 40, 0.829);
-    position: relative;
+    position: fixed;
     display: block;
-    z-index: 1;
+    margin-left: 55px;
+    margin-top: 15px;
     
-
 }
 
 
 #lapList {
    
     list-style: none;
-    font-size: 6px;
+    font-size: 9px;
     font-family: "digital";
     color: rgba(58, 40, 40, 0.829);  
     display: block;
     position: fixed;
-    z-index: 1;
-    padding-left: 17px;
-    top: 47px;
-    
+    padding-left: 0;
+    margin-left:6px;
+    margin-top: 29px;
     
 
 }
 
-
-
-.container_buttons {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-
-
-}
-
-.Start {
-
-    width:10px;
-    height:10px;
-    margin-right: 3px;
-    border-radius: 30px;
-    background-color: rgb(0, 255, 34);
-    font-family: "roboto";
-    font-size: 8px;
-    font-weight: 900;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    line-height: 10px;
-    
-    
-}
 
 .Start:hover {
-
     background-color: rgb(223, 223, 213);
     border-color: #1b739c;
 }
 
 .Start:active {
-
     background-color: beige;
     border-color: #1e93c9;
     transform: scale(0.98);
 }
 
-.Lap {
 
-    width:10px;
-    height:10px;
-    margin-right: 3px;
-    border-radius: 30px;
-    background-color: rgb(255, 0, 0);
-    font-family: "roboto";
-    font-size: 8px;
-    font-weight: 900;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    line-height: 10px;
-    
-    
-}
 
 .Lap:hover {
-
     background-color: rgb(223, 223, 213);
     border-color: #1b739c;
 }
 
 .Lap:active {
-
     background-color: beige;
     border-color: #1e93c9;
     transform: scale(0.98);
@@ -161,21 +120,7 @@ body {
 
 
 
-.Reset {
 
-    width:10px;
-    height:10px;
-    margin-right: 3px;
-    border-radius: 30px;
-    background-color: rgb(25, 0, 255);
-    font-family: "roboto";
-    font-size: 8px;
-    font-weight: 900;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    line-height: 10px;
-    
-}
 
 .Reset:hover {
 
@@ -191,21 +136,7 @@ body {
 }
 
 
-.Toggle {
 
-    width:10px;
-    height:10px;
-    margin-right: 10px;
-    border-radius: 30px;
-    background-color: rgb(255, 166, 1);
-    font-family: "roboto";
-    font-size: 8px;
-    font-weight: 900;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    line-height: 10px;
-      
-}
 
 .Toggle:hover {
 
@@ -219,3 +150,40 @@ body {
     border-color: #1e93c9;
     transform: scale(0.98);
 }
+
+.container_buttons .Start,
+.container_buttons .Lap,
+.container_buttons .Reset,
+.container_buttons .Toggle {
+
+    width:20px;
+    height:20px;
+    border-radius: 11px;
+    font-family: "roboto";
+    font-size: 8px;
+    font-weight: 900;
+    color: #000000;
+    background-color: #ebf2f5;
+    text-align: center;
+    line-height: 20px;
+    
+    
+}
+.container_buttons  {
+    width: 200px;
+    height: 15px;
+    display: flex;
+    border-radius: 3px;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+
+}
+
+
+

@@ -115,6 +115,24 @@ const lapTimes = []; // Tableau pour stocker les valeurs des tours
 const maxLapCount = 3; // Nombre maximum de tours à afficher
 
 
+// Fonction pour afficher l'heure actuelle
+function timeNow() {
+    const now = new Date();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    // Formater l'heure
+    const formattedTime = `${hours < 10 ? '0' : ''}${hours}:${minutes < 10 ? '0' : ''}${minutes}`;
+    // Afficher l'heure dans un élément HTML avec l'ID "currentTime"
+    const currentTimeElement = document.getElementById('currentTime');
+    if (currentTimeElement) {
+        currentTimeElement.innerText = formattedTime;
+    }
+}
+
+// Actualiser l'heure toutes les secondes (1000 millisecondes)
+setInterval(timeNow, 1000);
+
+  
 
 function chrono() {
   if (isRunning) {
