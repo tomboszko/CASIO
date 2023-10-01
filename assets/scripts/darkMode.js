@@ -1,17 +1,19 @@
 
 
 
- // Sélectionnez l'élément de liste déroulante et le corps de la page
- let toggleDarkMode = document.getElementById("toggle-darkmode");
- let body = document.body[0];
+let toggleDarkMode = document.getElementById("toggle-darkmode");
+let body = document.body;
+let ecran = document.getElementById('screen');
 
- // Écoutez les changements de sélection
- toggleDarkMode.addEventListener("change", () => {
+toggleDarkMode.addEventListener("change", () => {
+  
+  if (toggleDarkMode.value === "dark") {
+    body.classList.add("dark-mode");
+    ecran.classList.add('dark-mode');
+  
+  } else {
+    body.classList.remove("dark-mode");
+    ecran.classList.remove("dark-mode");
+  }
+});
 
-   // Si "Dark Mode" est sélectionné, ajoutez la classe "dark-mode" au corps, sinon, supprimez-la
-   if (toggleDarkMode.value === "dark") {
-     body.classList.add("dark-mode");
-   } else {
-     body.classList.remove("dark-mode");
-   }
- });

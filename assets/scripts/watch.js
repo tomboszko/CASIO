@@ -15,7 +15,6 @@ function timeNow() {
 setInterval(timeNow, 1000);
 
 
-
 document.addEventListener('DOMContentLoaded', function () {
 
     let isChronoVisible = true; 
@@ -42,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
             displayWatch.style.display = 'block';
             displayChrono.style.display = 'none';
             displayMode.style.display = 'none';
-            
+        
         }
      
     }

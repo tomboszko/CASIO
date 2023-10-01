@@ -57,9 +57,6 @@ function toggleChrono() {
       startTime = new Date().getTime() - (startTime - startTime);
       intervalId = setInterval(chrono, 1);
       lapSound.play();
-
-      
-
     }
   }
   isRunning = !isRunning;
@@ -97,14 +94,13 @@ function LapChrono() {
 }
 
 function updateLapDisplay() {
-    const lapListElement = document.getElementById('lapList');
+    let lapListElement = document.getElementById('lapList');
     lapListElement.innerHTML = ''; 
   
     // display last 3 laps
-    const startIndex = Math.max(lapTimes.length - 3, 0);
+    let startIndex = Math.max(lapTimes.length - 3, 0);
     let totalLapTime = 0; 
 
-  
     for (let i = startIndex; i < lapTimes.length; i++) {
       const lapTime = lapTimes[i];
       totalLapTime += lapTime;

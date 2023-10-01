@@ -1,4 +1,6 @@
-
+/* 
+must clarify its le bordel
+*/
 
 @font-face {
     font-family:"roboto" ;
@@ -11,13 +13,13 @@
 }
 body {
 
-    background-color:#3d768f;
+    background-color:#2c85ac;
     
 }
 
-body .dark-mode {
-    background-color: #333;
-    color: white;
+body.dark-mode {
+    background-color: #0e1327;
+    
   }
 
 
@@ -30,7 +32,7 @@ body .dark-mode {
     margin-right: auto;
     background-image: url("/assets/pictures/background-casio.png");
     display: block;
-    position: fixed;
+    position: relative;
     justify-content: center;
     flex-direction: column;
     border-radius: 5px;
@@ -48,14 +50,16 @@ body .dark-mode {
     display: block;
     position:fixed;
     border-radius: 5px;
-    z-index: 1;
     margin-top: 218px;
     margin-left: 64px;
-    
-    
    
 }
 
+ #screen.dark-mode {
+    background-color: aqua;
+
+    }
+    
 #chrono {
     
     font-size: 31px;
@@ -97,6 +101,8 @@ body .dark-mode {
 
 }
 
+
+
 #displayModeDate {
     font-size: 12px;
     font-family: "digital";
@@ -111,6 +117,8 @@ body .dark-mode {
     padding-left: 1px;
 
 }
+
+
 
 #displayModeAlarm {
     font-size: 12px;
