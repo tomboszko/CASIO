@@ -2,12 +2,12 @@
 
 @font-face {
     font-family:"roboto" ;
-    src: url(/assets/fonts/Roboto-Regular.ttf);
+    src: url(./assets/fonts/Roboto-Regular.ttf);
 }
 
 @font-face {
     font-family:"digital" ;
-    src: url(/assets/fonts/digital-7.ttf);
+    src: url(./assets/fonts/digital-7.ttf);
 }
 body {
 
@@ -23,7 +23,7 @@ body {
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url("/assets/pictures/background-casio.png");
+    background-image: url("./assets/pictures/background-casio.png");
     display: block;
     justify-content: center;
     flex-direction: column;
