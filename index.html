@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/assets/styles/style.css">
     <script src="/assets/scripts/Chrono.js"></script>
     <script src="/assets/scripts/watch.js"></script>
+    <script src="/assets/scripts/Game.js"></script>
     
     
     <title>TIME MANAGING</title>
@@ -13,11 +14,14 @@
 <body>
 <div class="watch">
 
+    <div id="screenGame"></div>
+
     <div id="screen">
 
         <div id="displayMode">CHRONO</div>
         <div id="displayModeDate">DATE</div>
         <div id="displayModeAlarm">ALARM</div>
+        <div id="displayModeGame">GAME</div>
 
         <div id="redDot">●</div>
         <div id="chrono">
@@ -43,12 +47,15 @@
         <div onclick="LapChrono()" class="Lap">L</div>
         <div onclick="resetChrono()" class="Reset">R</div>
         <div onclick="toggleWatch()" class="Toggle">M</div>
+        <div onclick="togglegame()" class="Game">G</div>
+
         <audio id="lapSound" src="assets/Sounds/bip1.mp3" style="width: 0; height: 0;" controls="false"></audio>
         <audio id="mainSound" src="assets/Sounds/bip2_main buttons.mp3" style="width: 0; height: 0;" controls="false"></audio>
     </div>
     <select id="toggle-darkmode">
         <option value="dark">Dark Mode</option>
         <option value="light" selected>Light Mode</option>
+        <option value="game">Game Mode</option>
       </select>
 
 </div>

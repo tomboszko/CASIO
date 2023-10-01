@@ -71,6 +71,7 @@ function resetChrono() {
   isRunning = false;
   lastLapTime = 0; 
   lapTimes.length = 0;
+  
   let lapSound = document.getElementById('mainSound');
 
   document.getElementById('minutesPassed').innerText ='00';

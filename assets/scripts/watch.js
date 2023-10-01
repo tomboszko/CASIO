@@ -15,6 +15,7 @@ function timeNow() {
 setInterval(timeNow, 1000);
 
 
+
 document.addEventListener('DOMContentLoaded', function () {
 
     let isChronoVisible = true; 

@@ -20,6 +20,10 @@ body.dark-mode {
     background-color: #0e1327;
 }
 
+body.game-mode {
+    background-color: hsl(236, 100%, 49%);
+}
+
 .watch {
     width: 320px;
     height: 509px;
@@ -52,6 +56,29 @@ body.dark-mode {
     background-color: aqua;
 
     }
+
+    #screen.game-mode {
+        background-color: rgb(195, 0, 235);
+    
+        }
+
+
+
+        #screenGame {
+            width: 193px;
+            height: 90px;
+            background-color: rgb(204, 0, 255);
+            display: block;
+            position:fixed;
+            border-radius: 5px;
+            margin-top: 218px;
+            margin-left: 64px;
+
+           
+        }
+        
+        
+
     
 #chrono {
     
@@ -78,6 +105,11 @@ body.dark-mode {
     text-align: center;
     
 }
+
+#currentTime.game-mode {
+    color: greenyellow;
+}
+
 
 #displayMode {
     font-size: 12px;
@@ -126,6 +158,29 @@ body.dark-mode {
     z-index: 1;
     padding-left: 1px;
 
+}
+
+#displayModeGame {
+    font-size: 12px;
+    font-family: "digital";
+    color:rgb(153, 6, 6);
+    display: block;
+    position: fixed;
+    margin-left: 95px;
+    margin-top: 1px;
+    border-radius: 2px;
+    border-color: rgb(153, 6, 6);
+    border-width: 1px;
+    border-style:solid;
+    z-index: 1;
+    padding-left: 1px;
+
+}
+
+#displayModeGame.game-mode {
+
+    background-color: #0011ff;
+    color: white;
 }
 
 
@@ -222,10 +277,24 @@ li {
     transform: scale(0.98);
 }
 
+.Game {
+
+    background-color: rgb(153, 6, 6);
+
+}
+
+.Game:active {
+
+    background-color: beige;
+    border-color: #1e93c9;
+    transform: scale(0.98);
+}
+
 .container_buttons .Start,
 .container_buttons .Lap,
 .container_buttons .Reset,
-.container_buttons .Toggle {
+.container_buttons .Toggle,
+.container_buttons .Game {
 
     width:20px;
     height:20px;
