@@ -18,12 +18,12 @@ body {
 
  .watch {
 
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 509px;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #191b31;
+    background-image: url("assets/background-casio.png");
     display: block;
     justify-content: center;
     flex-direction: column;
@@ -36,29 +36,28 @@ body {
 
 
 #screen {
-    width: 240px;
+    width: 120px;
     height: 60px;
-    margin-left: 30px;
-    background-color:aqua;
-    border-radius: 2px;
-    border-style:inset;
-    border-width:2px; 
-    border-color: rgb(56, 196, 196);
+    margin-left: 50px;
     display: block;
     position:fixed;
-    margin-top: 27px;
+    margin-top: 230px;
     
    
 }
 
 #chrono {
     
-    font-size: 32px;
+    font-size: 40px;
     font-family: "digital";
     color: rgba(58, 40, 40, 0.829);
     position: fixed;
     display: block;
-    margin-left: 5px;
+   text-align: center;
+   line-height: 40px;
+   margin-left: 28px;
+   top: 227px;
+   
     
     
    
@@ -66,31 +65,37 @@ body {
 
 #currentTime {
     
-    font-size: 64px;
+    font-size: 72px;
     line-height: 32px;
     font-family: "digital";
     color: rgba(58, 40, 40, 0.829);
     position: fixed;
     display: block;
-    margin-left: 55px;
+    margin-left: 52px;
     margin-top: 15px;
     
 }
 
 
+
+
 #lapList {
    
-    list-style: none;
-    font-size: 9px;
+    list-style:none;
+    font-size: 14px;
     font-family: "digital";
     color: rgba(58, 40, 40, 0.829);  
     display: block;
     position: fixed;
     padding-left: 0;
-    margin-left:6px;
-    margin-top: 29px;
+    margin-left:28px;
+    margin-top: 26px;
     
 
+}
+
+li {
+    list-style: none;
 }
 
 
@@ -170,15 +175,14 @@ body {
     
 }
 .container_buttons  {
-    width: 200px;
+    width: 180px;
     height: 50px;
     display: flex;
-    border-radius: 3px;
     justify-content: space-around;
     align-items: center;
     position: relative;
-    margin-top: 100px;
-    margin-left: auto;
+    margin-top: 155px;
+    margin-left:28px;
     margin-right: auto;
        
 

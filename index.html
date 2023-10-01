@@ -21,6 +21,8 @@
 
 
     <span id="currentTime">00:00</span>
+   <!-- <span id="alarm">00:00</span>
+    <span id="date">00/00/00</span>-->
 
     <div class="displayLap">
         <ul id="lapList"></ul>
@@ -31,11 +33,12 @@
         <div onclick="toggleChrono()" class="Start">S</div>
         <div onclick="LapChrono()" class="Lap">L</div>
         <div onclick="resetChrono()" class="Reset">R</div>
-        <div onclick="toggleWatch()" class="Toggle">T</div>
+        <div onclick="toggleWatch()" class="Toggle">M</div>
+        <audio id="lapSound" src="./assets/Sounds/bip1.mp3" style="width: 0; height: 0;" controls="false"></audio>
+        <audio id="mainSound" src="/assets/Sounds/bip2_main buttons.mp3" style="width: 0; height: 0;" controls="false"></audio>
     </div>
     
     
-</div>
 </body>
 </html>
 
