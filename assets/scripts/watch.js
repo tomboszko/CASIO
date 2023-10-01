@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let isChronoVisible = true; 
     let displayWatch = document.getElementById('currentTime');
     let displayChrono = document.getElementById('chrono');
+    let displayMode = document.getElementById('displayMode')
     let lapSound = document.getElementById('mainSound');
     let toggleButton = document.querySelector('.Toggle');
     toggleButton.addEventListener('click', toggleWatch);
@@ -34,13 +35,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
             displayWatch.style.display = 'none';
             displayChrono.style.display = 'block';
-            displayLap.style.display = 'block';
+            displayMode.style.display = 'block';
             
         } else {
             
             displayWatch.style.display = 'block';
             displayChrono.style.display = 'none';
-            displayLap.style.display = 'none';
+            displayMode.style.display = 'none';
             
         }
      
@@ -48,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // hide chrono at loading
     displayChrono.style.display = 'none';
-
+    displayMode.style.display = 'none';
     
     
 });

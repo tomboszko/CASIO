@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="./assets/styles/style.css">
     <script src="./assets/scripts/Chrono.js"></script>
     <script src="./assets/scripts/watch.js"></script>
+    <script src="./assets/scripts/darkMode.js"></script>
+    
     <title>TIME MANAGING</title>
 </head>
 <body>
@@ -13,6 +15,11 @@
 
     <div id="screen">
 
+        <div id="displayMode">CHRONO</div>
+        <div id="displayModeDate">DATE</div>
+        <div id="displayModeAlarm">ALARM</div>
+
+        <div id="redDot">●</div>
         <div id="chrono">
             <span id="minutesPassed">00</span>
             <span id="secondsPassed">:00</span>
@@ -20,26 +27,31 @@
         </div>
 
 
-    <span id="currentTime">00:00</span>
-   <!-- <span id="alarm">00:00</span>
-    <span id="date">00/00/00</span>-->
+                <span id="currentTime">00:00</span>
+            <!-- <span id="alarm">00:00</span>
+                <span id="date">00/00/00</span>-->
 
-    <div class="displayLap">
-        <ul id="lapList"></ul>
-        <li class="Laps"></li>
+            <div class="displayLap">
+                <ul id="lapList"></ul>
+                <li class="Laps"></li>
+            </div>
+
+        
     </div>
-
     <div class="container_buttons">
         <div onclick="toggleChrono()" class="Start">S</div>
         <div onclick="LapChrono()" class="Lap">L</div>
         <div onclick="resetChrono()" class="Reset">R</div>
         <div onclick="toggleWatch()" class="Toggle">M</div>
-
         <audio id="lapSound" src="assets/Sounds/bip1.mp3" style="width: 0; height: 0;" controls="false"></audio>
         <audio id="mainSound" src="assets/Sounds/bip2_main buttons.mp3" style="width: 0; height: 0;" controls="false"></audio>
     </div>
-    
-    
+    <select name="toggle-darkmode" id="toggle-darkmode">
+        <option value="dark">Dark Mode</option>
+        <option value="light" selected>Light Mode</option>
+      </select>
+
+</div>
 </body>
 </html>
 

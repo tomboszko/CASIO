@@ -31,11 +31,13 @@ function chrono() {
     const seconds = Math.floor(currentTime / 1000) % 60;
     const minutes = Math.floor(currentTime / 1000 / 60);
 
+
     const formattedMilliSeconds = milliSeconds < 10 ? `00${milliSeconds}` : (milliSeconds < 100 ? `0${milliSeconds}` : milliSeconds);
 
     document.getElementById('minutesPassed').innerText = `${minutes < 10 ? '0' : ''}${minutes}`;
     document.getElementById('secondsPassed').innerText = `:${seconds < 10 ? '0' : ''}${seconds}`;
     document.getElementById('milliSecondsPassed').innerText = `:${formattedMilliSeconds}`;
+    
   }
 }
 

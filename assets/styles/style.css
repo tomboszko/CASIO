@@ -2,18 +2,23 @@
 
 @font-face {
     font-family:"roboto" ;
-    src: url(assets/fonts/Roboto-Regular.ttf);
+    src: url(/assets/fonts/Roboto-Regular.ttf);
 }
 
 @font-face {
     font-family:"digital" ;
-    src: url(assets/fonts/digital-7.ttf);
+    src: url(/assets/fonts/digital-7.ttf);
 }
 body {
 
     background-color:#3d768f;
     
 }
+
+body .dark-mode {
+    background-color: #333;
+    color: white;
+  }
 
 
  .watch {
@@ -23,8 +28,9 @@ body {
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url("assets/pictures/background-casio.png");
+    background-image: url("/assets/pictures/background-casio.png");
     display: block;
+    position: fixed;
     justify-content: center;
     flex-direction: column;
     border-radius: 5px;
@@ -36,46 +42,105 @@ body {
 
 
 #screen {
-    width: 120px;
-    height: 60px;
-    margin-left: 50px;
+    width: 193px;
+    height: 90px;
+    background-color: rgb(140, 199, 199);
     display: block;
     position:fixed;
-    margin-top: 230px;
+    border-radius: 5px;
+    z-index: 1;
+    margin-top: 218px;
+    margin-left: 64px;
+    
     
    
 }
 
 #chrono {
     
-    font-size: 40px;
+    font-size: 31px;
     font-family: "digital";
     color: rgba(58, 40, 40, 0.829);
     position: fixed;
     display: block;
     text-align: center;
     line-height: 40px;
-    margin-left: 28px;
-    top: 227px;
-   
-    
-    
+    margin-top: 50px;
+    margin-left: 2px;
+
    
 }
 
 #currentTime {
     
-    font-size: 72px;
-    line-height: 32px;
+    font-size: 94px;
     font-family: "digital";
     color: rgba(58, 40, 40, 0.829);
     position: fixed;
     display: block;
-    margin-left: 52px;
-    margin-top: 15px;
+    text-align: center;
     
 }
 
+#displayMode {
+    font-size: 12px;
+    font-family: "digital";
+    color:rgb(140, 199, 199);
+    background-color: rgba(58, 40, 40, 0.829);  
+    display: block;
+    position: fixed;
+    margin-left: 2px;
+    margin-top: 1px;
+    border-radius: 2px;
+    z-index: 1;
+    padding-left: 1px;
+
+}
+
+#displayModeDate {
+    font-size: 12px;
+    font-family: "digital";
+    color:rgb(140, 199, 199);
+    background-color: rgba(58, 40, 40, 0.829);  
+    display: block;
+    position: fixed;
+    margin-left: 39px;
+    margin-top: 1px;
+    border-radius: 2px;
+    z-index: 1;
+    padding-left: 1px;
+
+}
+
+#displayModeAlarm {
+    font-size: 12px;
+    font-family: "digital";
+    color:rgb(140, 199, 199);
+    background-color: rgba(58, 40, 40, 0.829);  
+    display: block;
+    position: fixed;
+    margin-left: 64px;
+    margin-top: 1px;
+    border-radius: 2px;
+    z-index: 1;
+    padding-left: 1px;
+
+}
+
+
+
+#redDot {
+    font-size: 14px;
+    font-family: "digital";
+    color:rgb(153, 6, 6);
+    display: block;
+    position: fixed;
+    margin-left: 180px;
+    
+    
+    
+
+}
 
 
 
@@ -87,10 +152,10 @@ body {
     color: rgba(58, 40, 40, 0.829);  
     display: block;
     position: fixed;
+    margin-left:2px;
+    margin-top: 14px;
+    z-index: 1;
     padding-left: 0;
-    margin-left:28px;
-    margin-top: 26px;
-    
 
 }
 
@@ -180,12 +245,16 @@ li {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: relative;
-    margin-top: 155px;
-    margin-left:28px;
-    margin-right: auto;
-       
+    position: fixed;
+    margin-top: 385px;
+    margin-left:80px;
+   
+}
 
+#toggle-darkmode {
+
+    margin-top: 445px;
+    margin-left: 105px;
 }
 
 
