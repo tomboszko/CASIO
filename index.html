@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="Chrono.js"></script>
+    <script src="watch.js"></script>
+    <title>TIME MANAGING</title>
+</head>
+<body>
+<div class="watch">
+
+    <div id="screen">
+
+        <div id="chrono">
+            <span id="minutesPassed">00</span>
+            <span id="secondsPassed">:00</span>
+            <span id="milliSecondsPassed">:00</span>
+        </div>
+
+
+    </div>
+    <span id="currentTime">00:00</span>
+
+    <div class="displayLap">
+        <ul id="lapList"></ul>
+    </div>
+
+    <div class="container_buttons">
+        <div onclick="toggleChrono()" class="Start">S</div>
+        <div onclick="LapChrono()" class="Lap">L</div>
+        <div onclick="resetChrono()" class="Reset">R</div>
+        <div onclick="toggleWatch()" class="Toggle">T</div>
+    </div>
+</div>
+</body>
+</html>
+

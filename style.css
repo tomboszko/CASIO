@@ -1,0 +1,221 @@
+
+
+@font-face {
+    font-family:"roboto" ;
+    src: url(assets/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family:"digital" ;
+    src: url(assets/digital-7.ttf);
+}
+body {
+
+    background-color:#3d768f;
+}
+
+
+.watch {
+
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(25, 27, 49);
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+
+
+
+#screen {
+    width: 77px;
+    height: 35px;
+    margin-left: 9px;
+    background-color:aqua;
+    border-radius: 2px;
+    border-style:inset;
+    border-width:2px; 
+    border-color: rgb(56, 196, 196);
+    display: block;
+    position:fixed;
+    margin-top: 27px;
+    
+   
+}
+
+#chrono {
+    padding-left: 5px;
+    font-size: 16px;
+    font-family: "digital";
+    color: rgba(58, 40, 40, 0.829);
+    position: relative;
+    display: block;
+    z-index: 1;
+   
+}
+
+#currentTime {
+    padding-left: 17px;
+    padding-top: 30px;
+    font-size: 32px;
+    font-family: "digital";
+    color: rgba(58, 40, 40, 0.829);
+    position: relative;
+    display: block;
+    z-index: 1;
+    
+
+}
+
+
+#lapList {
+   
+    list-style: none;
+    font-size: 6px;
+    font-family: "digital";
+    color: rgba(58, 40, 40, 0.829);  
+    display: block;
+    position: fixed;
+    z-index: 1;
+    padding-left: 17px;
+    top: 47px;
+    
+    
+
+}
+
+
+
+.container_buttons {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.Start {
+
+    width:10px;
+    height:10px;
+    margin-right: 3px;
+    border-radius: 30px;
+    background-color: rgb(0, 255, 34);
+    font-family: "roboto";
+    font-size: 8px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 10px;
+    
+    
+}
+
+.Start:hover {
+
+    background-color: rgb(223, 223, 213);
+    border-color: #1b739c;
+}
+
+.Start:active {
+
+    background-color: beige;
+    border-color: #1e93c9;
+    transform: scale(0.98);
+}
+
+.Lap {
+
+    width:10px;
+    height:10px;
+    margin-right: 3px;
+    border-radius: 30px;
+    background-color: rgb(255, 0, 0);
+    font-family: "roboto";
+    font-size: 8px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 10px;
+    
+    
+}
+
+.Lap:hover {
+
+    background-color: rgb(223, 223, 213);
+    border-color: #1b739c;
+}
+
+.Lap:active {
+
+    background-color: beige;
+    border-color: #1e93c9;
+    transform: scale(0.98);
+}
+
+
+
+.Reset {
+
+    width:10px;
+    height:10px;
+    margin-right: 3px;
+    border-radius: 30px;
+    background-color: rgb(25, 0, 255);
+    font-family: "roboto";
+    font-size: 8px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 10px;
+    
+}
+
+.Reset:hover {
+
+    background-color: rgb(39, 39, 39);
+    
+}
+
+.Reset:active {
+
+    background-color: black;
+    transform: scale(0.98);
+    
+}
+
+
+.Toggle {
+
+    width:10px;
+    height:10px;
+    margin-right: 10px;
+    border-radius: 30px;
+    background-color: rgb(255, 166, 1);
+    font-family: "roboto";
+    font-size: 8px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 10px;
+      
+}
+
+.Toggle:hover {
+
+    background-color: rgb(223, 223, 213);
+    border-color: #1b739c;
+}
+
+.Toggle:active {
+
+    background-color: beige;
+    border-color: #1e93c9;
+    transform: scale(0.98);
+}
