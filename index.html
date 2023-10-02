@@ -7,6 +7,7 @@
     <script src="/assets/scripts/Chrono.js"></script>
     <script src="/assets/scripts/watch.js"></script>
     <script src="/assets/scripts/Game.js"></script>
+    <script src="/assets/scripts/toggle.js"></script>
     
     
     <title>CASIO</title>
@@ -18,17 +19,22 @@
 
     <div id="screen">
 
-        <div id="displayMode">CHRONO</div>
+        <div id="displayModeChrono">CHRONO</div>
         <div id="displayModeDate">DATE</div>
         <div id="displayModeAlarm">ALARM</div>
         <div id="displayModeGame">GAME</div>
 
         <div id="redDot">●</div>
+
         <div id="chrono">
             <span id="minutesPassed">00</span>
             <span id="secondsPassed">:00</span>
             <span id="milliSecondsPassed">:00</span>
         </div>
+
+            <div id="date">dd/mm/yyyy</div>
+            <span id="alarm">00:00</span>
+            <span id="game"></span>
 
 
                 <span id="currentTime">00:00</span>
@@ -40,14 +46,14 @@
                 <li class="Laps"></li>
             </div>
 
-        
+            <div id="displayModeLabel">MODE</div>
     </div>
     <div class="container_buttons">
         <div onclick="toggleChrono()" class="Start">S</div>
         <div onclick="LapChrono()" class="Lap">L</div>
         <div onclick="resetChrono()" class="Reset">R</div>
-        <div onclick="toggleWatch()" class="Toggle">M</div>
-        <div onclick="togglegame()" class="Game">G</div>
+        <div onclick="toggleMode()" class="Toggle">M</div>
+        <div onclick="GameMode()" class="Game">G</div>
 
         <audio id="lapSound" src="assets/Sounds/bip1.mp3" style="width: 0; height: 0;" controls="false"></audio>
         <audio id="mainSound" src="assets/Sounds/bip2_main buttons.mp3" style="width: 0; height: 0;" controls="false"></audio>
@@ -55,7 +61,7 @@
     <select id="toggle-darkmode">
         <option value="dark">Dark Mode</option>
         <option value="light" selected>Light Mode</option>
-        <option value="game">Game Mode</option>
+        
       </select>
 
 </div>
