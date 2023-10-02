@@ -1,9 +1,23 @@
-<!DOCTYPE html>
+<div class="fancy">
+    <ul class="slot">
+        <!-- In reverse order so the 7s show on load -->
+        <li><span>7</span></li>
+        <li><span>6</span></li>
+        <li><span>5</span></li>
+        <li><span>4</span></li>
+        <li><span>3</span></li>
+        <li><span>2</span></li>
+        <li><span>1</span></li>
+    </ul>
+    <input type="button" id="playBtn" value="Play">
+
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="stylesheet" href="/assets/styles/slot.css">
     <script src="/assets/scripts/Chrono.js"></script>
     <script src="/assets/scripts/watch.js"></script>
     <script src="/assets/scripts/Game.js"></script>
@@ -14,11 +28,9 @@
 <body>
 <div class="watch">
 
-    <div id="screenGame"></div>
-
     <div id="screen">
-        <div id="redDot">●</div>
 
+                                                                            <div id="redDot">●</div>
         <ul id="displayMode">
             <li><div id="displayModeTime"class="initial-visible"class="display-mode">TIME</div></li>
                 <li><div id="displayModeChrono"class="initial-hidden"class="display-mode">CHRONO</div></li>
@@ -34,16 +46,15 @@
                     <span id="secondsPassed">:00</span>
                     <span id="milliSecondsPassed">:00</span>
                 </div></li>
-                            <li><span id="date"class="initial-hidden"class="display-mode">dd/mm/yyyy</span></li>
+                            <li><span id="date"class="initial-hidden"class="display-mode">999999</span></li>
                                 <li><span id="alarm"class="initial-hidden"class="display-mode">00:00</span></li>
                                     <li><span id="game"class="initial-hidden"class="display-mode"></span></li>
         </ul>
-
-        <div class="displayLap">
-            <ul id="lapList"></ul>
-            <li class="Laps"></li>
-        </div>
         
+    </div>
+    <div class="displayLap">
+        <ul id="lapList"></ul>
+        <li class="Laps"></li>
     </div>
 
     <div class="container_buttons">
@@ -51,7 +62,9 @@
         <div onclick="LapChrono()" class="Lap">L</div>
         <div onclick="resetChrono()" class="Reset">R</div>
         <div onclick="toggleMode()" class="Toggle">M</div>
-        <div onclick="GameMode()" class="Game">G</div>
+        <div onclick="GameMode()" class="ShowAllModes" class="Game">G</div>
+        
+
 
         <audio id="lapSound" src="assets/Sounds/bip1.mp3" style="width: 0; height: 0;" controls="false"></audio>
         <audio id="mainSound" src="assets/Sounds/bip2_main buttons.mp3" style="width: 0; height: 0;" controls="false"></audio>
@@ -67,9 +80,6 @@
 <script src="/assets/scripts/toggle.js"></script>
 <script src="./assets/scripts/darkMode.js"></script>
 
-<script>
-   
-</script>
+</div>
 </body>
 </html>
-

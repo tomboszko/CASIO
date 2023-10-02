@@ -1,4 +1,5 @@
 
+
 const displayModes = document.querySelectorAll('#displayMode div');
 const displayScreens = document.querySelectorAll('#displayScreen li');
 
@@ -22,5 +23,6 @@ function toggleMode() {
 
 const toggleButton = document.querySelector('.Toggle');
 toggleButton.addEventListener('click', toggleMode);
+
 
 

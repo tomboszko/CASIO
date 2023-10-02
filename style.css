@@ -61,10 +61,7 @@ body.dark-mode {
     color: rgba(58, 40, 40, 0.829);
     position: fixed;
     display: block;
-    margin-left:19px
-
-
-    
+    text-align: center;
     
 }
 
@@ -77,38 +74,40 @@ body.dark-mode {
     display: block;
     text-align: center;
     margin-top:25px;
+
     margin-left: 2px;  
 }
 
 #alarm {
     
-    font-size: 74px;
-    font-family: "digital";
+    font-size: 38px;
     line-height: 74px;
+    font-family: "digital";
     color: rgba(58, 40, 40, 0.829);
     position: fixed;
     display: block;
-    margin-left:19px 
+    text-align: center;
+    margin-top: 16px;
+    margin-left: 2px; 
     
 }
 
 #date {
     
-    font-size: 44px;
+    font-size: 38px;
     font-family: "digital";
     color: rgba(58, 40, 40, 0.829);
     position: fixed;
     display: block;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 16px;
     margin-left: 2px;
-    text-align: center;
     
 }
 
 #Game {
     
-    font-size: 44px;
+    font-size: 40px;
     font-family: "digital";
     color: rgba(58, 40, 40, 0.829);
     position: fixed;
@@ -159,7 +158,8 @@ body.dark-mode {
     margin-left: 57px;
     margin-top: 1px;
     border-radius: 2px;
-     
+    
+    
 }
 
 
@@ -190,8 +190,11 @@ body.dark-mode {
     margin-left: 111px;
     margin-top: 1px;
     
+    
 
 }
+
+
 
 
 #redDot {
@@ -209,12 +212,13 @@ body.dark-mode {
 #lapList {
    
     list-style:none;
-    font-size: 11px;
+    font-size: 14px;
     font-family: "digital";
     color: rgba(58, 40, 40, 0.829);  
     display: block;
     position: fixed;
-    margin-left:1px;
+    margin-left:2px;
+    margin-top: 1px;
     padding-left: 0;
 
 }
