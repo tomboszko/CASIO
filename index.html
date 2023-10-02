@@ -7,7 +7,6 @@
     <script src="/assets/scripts/Chrono.js"></script>
     <script src="/assets/scripts/watch.js"></script>
     <script src="/assets/scripts/Game.js"></script>
-    <script src="/assets/scripts/toggle.js"></script>
     
     
     <title>CASIO</title>
@@ -18,36 +17,35 @@
     <div id="screenGame"></div>
 
     <div id="screen">
-
-        <div id="displayModeChrono">CHRONO</div>
-        <div id="displayModeDate">DATE</div>
-        <div id="displayModeAlarm">ALARM</div>
-        <div id="displayModeGame">GAME</div>
-
         <div id="redDot">●</div>
 
-        <div id="chrono">
-            <span id="minutesPassed">00</span>
-            <span id="secondsPassed">:00</span>
-            <span id="milliSecondsPassed">:00</span>
+        <ul id="displayMode">
+            <li><div id="displayModeTime"class="initial-visible"class="display-mode">TIME</div></li>
+                <li><div id="displayModeChrono"class="initial-hidden"class="display-mode">CHRONO</div></li>
+                    <li><div id="displayModeDate"class="initial-hidden"class="display-mode">DATE</div></li>
+                        <li><div id="displayModeAlarm"class="initial-hidden"class="display-mode">ALARM</div></li>
+                            <li><div id="displayModeGame"class="initial-hidden"class="display-mode">GAME</div></li>
+        </ul>
+
+        <ul id="displayScreen"> 
+            <li><span id="currentTime"class="initial-visible"class="display-mode"></span></li>
+                <li><div id="chrono"class="display-mode">
+                    <span id="minutesPassed">00</span>
+                    <span id="secondsPassed">:00</span>
+                    <span id="milliSecondsPassed">:00</span>
+                </div></li>
+                            <li><div id="date"class="initial-hidden"class="display-mode">dd/mm/yyyy</div></li>
+                                <li><span id="alarm"class="initial-hidden"class="display-mode">00:00</span></li>
+                                    <li><span id="game"class="initial-hidden"class="display-mode"></span></li>
+        </ul>
+
+        <div class="displayLap">
+            <ul id="lapList"></ul>
+            <li class="Laps"></li>
         </div>
-
-            <div id="date">dd/mm/yyyy</div>
-            <span id="alarm">00:00</span>
-            <span id="game"></span>
-
-
-                <span id="currentTime">00:00</span>
-            <!-- <span id="alarm">00:00</span>
-                <span id="date">00/00/00</span>-->
-
-            <div class="displayLap">
-                <ul id="lapList"></ul>
-                <li class="Laps"></li>
-            </div>
-
-            <div id="displayModeLabel">MODE</div>
+        
     </div>
+
     <div class="container_buttons">
         <div onclick="toggleChrono()" class="Start">S</div>
         <div onclick="LapChrono()" class="Lap">L</div>
@@ -58,15 +56,20 @@
         <audio id="lapSound" src="assets/Sounds/bip1.mp3" style="width: 0; height: 0;" controls="false"></audio>
         <audio id="mainSound" src="assets/Sounds/bip2_main buttons.mp3" style="width: 0; height: 0;" controls="false"></audio>
     </div>
+
     <select id="toggle-darkmode">
         <option value="dark">Dark Mode</option>
         <option value="light" selected>Light Mode</option>
-        
-      </select>
-
+    </select>
 </div>
 
+
+<script src="/assets/scripts/toggle.js"></script>
 <script src="./assets/scripts/darkMode.js"></script>
+
+<script>
+   
+</script>
 </body>
 </html>
 

@@ -26,7 +26,7 @@ body.dark-mode {
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(/assets/pictures/background-casio.png);
+    background-image: url("/assets/pictures/background-casio.png");
     display: block;
     position: relative;
     justify-content: center;
@@ -53,33 +53,38 @@ body.dark-mode {
 
     }
     
-#chrono {
-    
-    font-size: 31px;
-    font-family: "digital";
-    color: rgba(58, 40, 40, 0.829);
-    position: fixed;
-    display: block;
-    text-align: center;
-    line-height: 40px;
-    margin-top: 49px;
-    margin-left: 2px;  
-}
+
 
 #currentTime {
     
-    font-size: 94px;
+    font-size: 74px;
     font-family: "digital";
+    line-height: 74px;
     color: rgba(58, 40, 40, 0.829);
     position: fixed;
     display: block;
     text-align: center;
     
+    
+    
+}
+
+#chrono {
+    
+    font-size: 40px;
+    font-family: "digital";
+    color: rgba(58, 40, 40, 0.829);
+    position: fixed;
+    display: block;
+    text-align: center;
+    margin-top: 38px;
+    margin-left: 2px;  
 }
 
 #alarm {
     
-    font-size: 94px;
+    font-size: 74px;
+    line-height: 74px;
     font-family: "digital";
     color: rgba(58, 40, 40, 0.829);
     position: fixed;
@@ -89,6 +94,19 @@ body.dark-mode {
 }
 
 #date {
+    
+    font-size: 38px;
+    font-family: "digital";
+    color: rgba(58, 40, 40, 0.829);
+    position: fixed;
+    display: block;
+    text-align: center;
+    margin-top: 16px;
+    margin-left: 2px;
+    
+}
+
+#Game {
     
     font-size: 40px;
     font-family: "digital";
@@ -101,9 +119,7 @@ body.dark-mode {
     
 }
 
-
-
-#displayModeChrono {
+#displayModeTime {
     font-size: 12px;
     font-family: "digital";
     color:rgb(140, 199, 199);
@@ -113,8 +129,23 @@ body.dark-mode {
     margin-left: 2px;
     margin-top: 1px;
     border-radius: 2px;
-    z-index: 1;
-    padding-left: 1px;
+    
+    
+
+}
+
+#displayModeChrono {
+    font-size: 12px;
+    font-family: "digital";
+    color:rgb(140, 199, 199);
+    background-color: rgba(58, 40, 40, 0.829);  
+    display: block;
+    position: fixed;
+    margin-left: 22px;
+    margin-top: 1px;
+    border-radius: 2px;
+    
+    
 
 }
 
@@ -127,11 +158,11 @@ body.dark-mode {
     background-color: rgba(58, 40, 40, 0.829);  
     display: block;
     position: fixed;
-    margin-left: 39px;
+    margin-left: 57px;
     margin-top: 1px;
     border-radius: 2px;
-    z-index: 1;
-    padding-left: 1px;
+    
+    
 
 }
 
@@ -144,11 +175,11 @@ body.dark-mode {
     background-color: rgba(58, 40, 40, 0.829);  
     display: block;
     position: fixed;
-    margin-left: 64px;
+    margin-left: 81px;
     margin-top: 1px;
     border-radius: 2px;
-    z-index: 1;
-    padding-left: 1px;
+    
+    
 
 }
 
@@ -159,19 +190,14 @@ body.dark-mode {
     background-color: rgba(58, 40, 40, 0.829);  
     display: block;
     position: fixed;
-    margin-left: 95px;
-    margin-top: 1px;
     border-radius: 2px;
-    z-index: 1;
-    padding-left: 1px;
+    margin-left: 111px;
+    margin-top: 1px;
+    
+    
 
 }
 
-#displayModeGame.game-mode {
-
-    background-color: #0011ff;
-    color: white;
-}
 
 
 
@@ -182,14 +208,8 @@ body.dark-mode {
     display: block;
     position: fixed;
     margin-left: 180px;
-    
-    
-    
+    z-index: 1;
 
-}
-#displayModeLabel {
-
-    color: greenyellow;
 }
 
 
@@ -202,25 +222,42 @@ body.dark-mode {
     display: block;
     position: fixed;
     margin-left:2px;
-    margin-top: 13px;
-    z-index: 1;
+    margin-top: 1px;
     padding-left: 0;
 
 }
 
 li {
     list-style: none;
+    
+}
+
+#displayMode {
+    list-style:none;
+    margin-top: 0;
+    padding-left: 0;
+
+}
+#displayScreen {
+    list-style: none;
+    
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 193px;
+    height: 74px;
+    position: fixed;
+    z-index: 5;
 }
 
 
 .Start:hover {
-    background-color: rgb(223, 223, 213);
-    border-color: #1b739c;
+    background-color: rgb(175, 175, 162);
+    
 }
 
 .Start:active {
     background-color: beige;
-    border-color: #1e93c9;
     transform: scale(0.98);
 }
 
@@ -228,21 +265,16 @@ li {
 
 .Lap:hover {
     background-color: rgb(223, 223, 213);
-    border-color: #1b739c;
+    
 }
 
 .Lap:active {
     background-color: beige;
-    border-color: #1e93c9;
     transform: scale(0.98);
 }
 
 
-
-
-
 .Reset:hover {
-
     background-color: rgb(39, 39, 39);
     
 }
@@ -255,33 +287,19 @@ li {
 }
 
 
-
-
 .Toggle:hover {
 
     background-color: rgb(223, 223, 213);
-    border-color: #1b739c;
+    
 }
 
 .Toggle:active {
 
     background-color: beige;
-    border-color: #1e93c9;
     transform: scale(0.98);
 }
 
-.Game {
 
-    background-color: rgb(153, 6, 6);
-
-}
-
-.Game:active {
-
-    background-color: beige;
-    border-color: #1e93c9;
-    transform: scale(0.98);
-}
 
 .container_buttons .Start,
 .container_buttons .Lap,
@@ -316,8 +334,8 @@ li {
 
 #toggle-darkmode {
 
-    margin-top: 445px;
-    margin-left: 105px;
+    margin-top: 443px;
+    margin-left: 113px;
 }
 
 
