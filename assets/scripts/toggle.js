@@ -9,7 +9,7 @@ for (let i = 1; i < displayModes.length; i++) {
 }
 
 let currentModeIndex = 0;
-
+let lapSound = document.getElementById('mainSound');
 function toggleMode() {
     
     displayModes[currentModeIndex].style.display = 'none';
@@ -19,6 +19,8 @@ function toggleMode() {
 
     displayModes[currentModeIndex].style.display = 'block';
     displayScreens[currentModeIndex].style.display = 'block';
+    lapSound.play();
+
 }
 
 const toggleButton = document.querySelector('.Toggle');

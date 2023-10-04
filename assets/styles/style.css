@@ -44,11 +44,17 @@ body.dark-mode {
     border-radius: 5px;
     margin-top: 218px;
     margin-left: 64px;
+    border-style:inset;
+    border-width: 2px;
+    border-color: aquamarine;
    
 }
 
  #screen.dark-mode {
     background-color: aqua;
+    border-style:inset;
+    border-width: 2px;
+    border-color: rgb(199, 219, 213);
 
     }
 
@@ -62,11 +68,10 @@ body.dark-mode {
     position: fixed;
     display: block;
     margin-left:19px
-
-
-    
     
 }
+
+
 
 #chrono {
     
@@ -214,8 +219,9 @@ body.dark-mode {
     color: rgba(58, 40, 40, 0.829);  
     display: block;
     position: fixed;
-    margin-left:1px;
+    margin-left:4px;
     padding-left: 0;
+    margin-top: 0;
 
 }
 
@@ -232,7 +238,6 @@ li {
 }
 #displayScreen {
     list-style: none;
-    
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
@@ -299,8 +304,8 @@ li {
 .container_buttons .Toggle,
 .container_buttons .Game {
 
-    width:20px;
-    height:20px;
+    width:15px;
+    height:15px;
     border-radius: 11px;
     font-family: "roboto";
     font-size: 8px;
@@ -308,10 +313,13 @@ li {
     color: #000000;
     background-color: #ebf2f5;
     text-align: center;
-    line-height: 20px;
+    line-height: 15px;
     
-    
+
 }
+
+
+
 .container_buttons  {
     width: 180px;
     height: 50px;
@@ -319,8 +327,8 @@ li {
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    margin-top: 385px;
-    margin-left:80px;
+    margin-top: 300px;
+    margin-left:85px;
    
 }
 
