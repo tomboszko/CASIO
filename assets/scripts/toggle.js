@@ -1,6 +1,6 @@
 
 
-const displayModes = document.querySelectorAll('#displayMode div');
+const displayModes = document.querySelectorAll('#displayMode li');
 const displayScreens = document.querySelectorAll('#displayScreen li');
 
 for (let i = 1; i < displayModes.length; i++) {

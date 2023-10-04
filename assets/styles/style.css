@@ -36,8 +36,8 @@ body.dark-mode {
 
 
 #screen {
-    width: 193px;
-    height: 90px;
+    width: 188px;
+    height: 95px;
     background-color: rgb(140, 199, 199);
     display: block;
     position:fixed;
@@ -47,6 +47,7 @@ body.dark-mode {
     border-style:inset;
     border-width: 2px;
     border-color: aquamarine;
+    
    
 }
 
