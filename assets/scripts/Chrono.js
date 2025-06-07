@@ -54,7 +54,8 @@ function toggleChrono() {
     lapSound.play();
   } else {
     if (intervalId === null) {
-      startTime = new Date().getTime() - (startTime - startTime);
+      // start the chrono and take previously elapsed time into account
+      startTime = new Date().getTime();
       intervalId = setInterval(chrono, 1);
       lapSound.play();
     }
@@ -88,8 +89,9 @@ function LapChrono() {
   if (isRunning) {
       const currentTime = new Date().getTime() - startTime + elapsedTime;
       const lapTime = currentTime - lastLapTime;
-      lapTimes.push(lapTime); 
-      updateLapDisplay(); 
+      lapTimes.push(lapTime);
+      lastLapTime = currentTime;
+      updateLapDisplay();
       lapSound.play();
   }
 }
